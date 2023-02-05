@@ -46,7 +46,7 @@ class Learner(models.Model):
         default=STUDENT
     )
     social_link = models.URLField(max_length=200)
-
+    
     def __str__(self):
         return self.user.username + "," + \
                self.occupation
@@ -155,4 +155,4 @@ class Submission(models.Model):
 #    Other fields and methods you would like to design
     def __str__(self):
         return f"submission:{self.pk}"
-        
+    
